@@ -6,9 +6,9 @@ def link_t(link):
     browser = webdriver.Chrome()
     browser.get(link)
 
-    browser.find_element_by_xpath(".//*[@placeholder = 'Введите имя']").send_keys("Иван")
-    browser.find_element_by_xpath(".//*[@placeholder = 'Введите фамилию']").send_keys("Иванов")
-    browser.find_element_by_xpath(".//*[@placeholder = 'Введите Email']").send_keys("ivan@yandex.ru")
+    browser.find_element_by_css_selector("[placeholder='Input your first name']").send_keys("Ivan")
+    browser.find_element_by_css_selector("[placeholder='Input your last name']").send_keys("Ivanov")
+    browser.find_element_by_css_selector("[placeholder='Input your email']").send_keys("ivan@mail.ru")
     browser.find_element_by_css_selector("button.btn").click()
 
     time.sleep(1)
