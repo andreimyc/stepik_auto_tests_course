@@ -18,12 +18,12 @@ def link_t(link):
 class tast_reg1(unittest.TestCase):
     def test_reg1(self):
         self.assertEqual(link_t("http://suninjuly.github.io/registration1.html"),
-                         "Поздравляем! Вы успешно зарегистировались!", "registration is failed")
+                         "Congratulations! You have successfully registered!", "registration is failed")
 
 
     def test_reg2(self):
         self.assertEqual(link_t("http://suninjuly.github.io/registration2.html"),
-                         "Поздравляем! Вы успешно зарегистировались!", "registration is failed")
+                         "Congratulations! You have successfully registered!", "registration is failed")
 
 if __name__ == "__main__":
     unittest.main()

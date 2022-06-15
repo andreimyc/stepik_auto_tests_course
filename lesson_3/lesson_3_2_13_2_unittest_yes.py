@@ -42,12 +42,10 @@ class TestAbs(unittest.TestCase):
         browser.get(link)
 
         # Ваш код, который заполняет обязательные поля
-        input1 = browser.find_element_by_css_selector("[placeholder='Input your first name']")
+        input1 = browser.find_element_by_css_selector("[placeholder='Input your name']")
         input1.send_keys("Ivan")
-        input2 = browser.find_element_by_css_selector("[placeholder='Input your last name']")
-        input2.send_keys("Ivanov")
-        input3 = browser.find_element_by_css_selector("[placeholder='Input your email']")
-        input3.send_keys("ivan@mail.ru")
+        input2 = browser.find_element_by_css_selector("[placeholder='Input your email']")
+        input2.send_keys("ivan@mail.ru")
 
 
         # Отправляем заполненную форму
