@@ -1,3 +1,5 @@
+## pytest -s -v lesson_3_5_4_test_fixture8_markers_skip.py - команда для запуска
+
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -15,7 +17,7 @@ def browser():
 
 class TestMainPage1():
 
-    @pytest.mark.skip
+    @pytest.mark.skip ## пропуск теста
     def test_guest_should_see_login_link(self, browser):
         browser.get(link)
         browser.find_element(By.CSS_SELECTOR, "#login_link")
