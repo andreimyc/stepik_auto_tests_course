@@ -1,3 +1,6 @@
+## pytest -s -v -m "smoke and win10" lesson_3_5_3_test_fixture8_markers_win10.py
+
+
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
