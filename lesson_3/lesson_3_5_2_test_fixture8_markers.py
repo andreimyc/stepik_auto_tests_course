@@ -1,3 +1,7 @@
+## pytest -s -v -m smoke lesson_3_5_2_test_fixture8_markers.py
+## pytest -s -v -m regression lesson_3_5_2_test_fixture8_markers.py
+
+
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
