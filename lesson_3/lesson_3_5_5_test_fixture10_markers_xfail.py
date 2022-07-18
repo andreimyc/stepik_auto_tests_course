@@ -1,3 +1,5 @@
+# pytest -v test_fixture10.py - запуск теста
+
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
