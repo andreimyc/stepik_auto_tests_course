@@ -1,4 +1,5 @@
 #  pytest -v --tb=line --reruns 1 --browser_name=chrome test_rerun.py
+from selenium.webdriver.common.by import By
 
 link = "http://selenium1py.pythonanywhere.com/"
 
